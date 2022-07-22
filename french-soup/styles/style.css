@@ -7,3 +7,91 @@ html {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px
 }
+
+.main-title {
+  font-size: 2rem;
+  display: grid;
+  color: white;
+  background-image: url(../images/soup.jpg);
+  background-position: center;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  background-size: cover;
+  text-align: center;
+  font-weight: 500;
+  margin: 0px;
+}
+
+#description {
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 1200px;
+  padding: 100px 15%;
+  grid-row-gap: 70px;
+  justify-items: center;
+}
+
+#description p {
+  font-size: 1.5rem;
+}
+
+.info-img {
+  display: grid;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+hr {
+  margin: 0 15%;
+  color: #BBBBBB;
+}
+
+#ingredients {
+  display: grid;
+  grid-template-rows: 50px 350px 100px;
+  grid-template-columns: 100%;
+  padding: 60px 15%;
+  grid-row-gap: 3rem;
+  place-content: center flex-end;
+}
+
+.title h2 {
+  font-size: 1.7rem; 
+}
+
+.list {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 30px; 
+  padding-bottom: 50px;
+}
+
+#directions {
+  display: grid;
+  grid-template-rows: 150px 150px;
+  grid-template-columns: 100%;
+  padding: 60px 15%;
+  grid-row-gap: 90px;
+  align-items: center;
+  justify-content: center
+}
+
+ol {
+  counter-reset: item;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#directions li {
+  display: block;
+  margin-bottom: .5em;
+  margin-left: 2em;
+}
+
+#directions li::before {
+  display: inline-block;
+  content: counter(item) ") ";
+  counter-increment: item;
+  width: 2em;
+  margin-left: -2em;
+}
